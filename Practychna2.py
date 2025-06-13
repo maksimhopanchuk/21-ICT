@@ -20,3 +20,9 @@ class StudentInfo(Name):n
             "email": self.email,
             "adult": self._is_adult()
         }
+        student = StudentInfo("Максим", "Гопанчук", 2008, "Луцьк", "ТфКЛНТУ", "asdasd@gmail.com")
+
+print("Курс:", student.calculate_course())
+print("Ім'я + Прізвище:", student.create_name_list())
+print("Повна інформація:")
+print(student.get_full_info())
